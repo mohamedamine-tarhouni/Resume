@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+#contact {
+  width: 100%;
+}
+.cv__navbar {
+  background-color: #00a6eb;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  height: 100vh;
+  padding: 5rem 0;
+}
+
+.cv__navbar-img a img {
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 50% !important;
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.cv__navbar-list {
+  margin-top: 15px;
+}
+
+.cv__navbar-list ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.cv__navbar-list-item {
+  display: block;
+}
+
+.cv__navbar-list-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.cv__navbar-list-link.active {
+  color: #fff;
+}
+
+.cv__content {
+  margin-left: 17rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem 16rem;
+  max-width: 70rem;
+}
+
+.cv__content h1 {
+  font-size: 50px;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.cv__content h2 {
+  border: solid black;
+  background-color: #00A6EB;
+  color: white;
+  text-align: center;
+  border-radius: 18px;
+}
+
+h2:hover {
+  background-color: white;
+  color: #00A6EB;
+}
+
+.cv__content p {
+  text-align: justify;
+}
+
+.cv__content-tags {
+  align-items: center;
+  display: flex;
+}
+
+.cv-download-link {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.cv__content-tags ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cv__content-tags ul li {
+  margin: 0.5em 0.2em;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #00a6eb;
+  border-radius: 5px;
+  margin: 0.5em 0.2em;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #00a6eb;
+  border-radius: 5px;
+}
+
+.cv__content-tags ul li:first-child {
+  margin-left: 0;
+}
+
+.cv__content-tags ul li:last-child {
+  margin-right: 0;
+}
+
+.cv__social {
+  position: fixed;
+  top: 130px;
+  right: 0;
+}
+
+.cv__social a {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  position: relative;
+  line-height: 40px;
+  margin-bottom: 1px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+  z-index: 2;
+}
+
+.cv__social a i {
+  margin: auto;
+}
+
+.cv__social a span {
+  line-height: 40px;
+  right: 60px;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  visibility: hidden;
+  transition-duration: 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.cv__social a:hover>span {
+  visibility: visible;
+  right: 41px;
+  opacity: 1;
+}
+
+.cv__download-content {
+  margin-bottom: 20px
+}
+
+.cv__download-link {
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  background-color: midnightblue;
+animation: scaleAnim 5s ease-in-out infinite alternate;
+-webkit-animation: scaleAnim .5s ease-in-out infinite alternate;
+}
+
+.cv__download-link span {
+  background-color: midnightblue;
+}
+
+.cv__social-facebook {
+  background-color: #00AAE5;
+}
+
+.cv__social-facebook span {
+  background-color: #00AAE5;
+}
+
+.cv__social-twitter {
+  background-color: #7D3895;
+}
+
+.cv__social-twitter span {
+  background-color: #7D3895;
+}
+
+.cv__social-linkedin {
+  background-color: #FFC41E;
+}
+
+.cv__social-linkedin span {
+  background-color: #FFC41E;
+}
+
+.cv__social-github {
+  background-color: #CCCCCC;
+}
+
+.cv__social-github span {
+  background-color: #CCCCCC;
+}
+
+.cv__social-instagrem {
+  background-color: #ED2B29;
+}
+
+.cv__social-instagrem span {
+  background-color: #ED2B29;
+}
+
+.cv__form {
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.cv__form input[type=submit] {
+  background: #fff;
+  height: 2.75rem;
+  margin: 1em auto auto;
+}
+
+@media (min-width: 768px) {
+  .cv__form input[type=submit] {
+    background: #fff;
+    bottom: 2.75rem;
+    height: 2.75rem;
+    padding: 0 3rem;
+  }
+}
+
+.cv__form input[type=email],
+.cv__form input[type=text],
+.cv__form textarea {
+  height: 1.5rem;
+  margin: 0 0 1.15rem;
+  width: 100%;
+}
+
+.cv__form input[type=email],
+.cv__form input[type=text],
+.cv__form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #00a6eb;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cv__form input[type=email]:required,
+.cv__form input[type=text]:required,
+.cv__form textarea:required {
+  box-shadow: none;
+  outline: none;
+}
+
+.cv__form input[type=submit] {
+  background: #00a6eb;
+  border: none;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.cv__form input[type=submit]:hover,
+.cv__form input[type=submit]:focus {
+  background: rgba(0, 166, 235, 0.5);
+  cursor: pointer;
+  outline: none;
+}
+
+.cv__form .inputs--filled label {
+  transform: translate(0, 0);
+}
+
+.cv__form .inputs--invalid input,
+.cv__form .inputs--invalid textarea {
+  animation: shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  background: url(//my-assets.netlify.com/codepen/dailyui-001/ico-invalid.svg) center right no-repeat;
+  border-bottom: 2px solid #f37b56;
+  box-shadow: none;
+  color: #f37b56;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  33% {
+    transform: translate3d(-6px, 0, 0);
+  }
+  66% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+.cv__form .inputs--invalid label {
+  color: #f37b56;
+}
+
+.cv__form label {
+  display: inline-block;
+  transform: translate(0, 1.25rem);
+  transition: 0.15s;
+}
+
+.cv--alert {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.cv--alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+.cv__scroll-top-link[data-visible=true] {
+  opacity: 1;
+  visibility: visible;
+}
+.cv__scroll-top-link {
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.5rem;
+  z-index: 15;
+}
+.cv__navbar-btn{
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .cv__navbar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-bottom-right-radius: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    transition: .2s;
+  }
+  .cv__navbar.open{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .cv__navbar-btn{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    width: 40px;
+    height: 32px;
+  }
+  .cv__navbar-btn input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  .cv__navbar-btn span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+  }
+  .cv__navbar input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-6px, -21px);
+    background: #ffffff;
+  }
+  .cv__navbar input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  .cv__navbar input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, 10px);
+  }
+  .cv__navbar .cv__menu{
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.1s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  .cv__navbar.open .cv__menu{
+    transform: none;
+  }
+  .cv__content{
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 20px 16rem;
+  }
+  .cv__content h1{
+    text-align: center;
+  }
+}
