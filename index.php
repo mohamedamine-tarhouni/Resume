@@ -118,6 +118,15 @@
                      en train de jouer The Legend Of Zelda The Minish Cap et en même temps de trouver
                      des informations à propos de moi
                 </p>
+                <p>
+                    Insult Simulator : Recréation du jeu Insult Simulator en utilisant python
+                </p>
+                <p>
+                    Super Mario : Recréation du jeu Super Mario sur le web en utilisant js avec le framework Phaser 3
+                </p>
+                <p>
+                    Brick Breaker : Recréation du jeu Brick Breaker sur le web en utilisant js avec le framework Phaser 3
+                </p>
             </section>
             <section id="education">
                 <h2>
